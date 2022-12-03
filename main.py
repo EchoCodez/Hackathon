@@ -1,25 +1,39 @@
 class Child():
-    def __init__(self, name, age, wishlist, costs):
+    def __init__(self, name, age, wishlist, cost):
         self.name = name
         self.age = age
         self.wishlist = wishlist
-        self.costs = costs
+        self.cost = cost
+
+child_info = {"name": "HIJAKDSJN", 
+"age": 2109831094804938501435, 
+"wishlist": ["sadkfhgafjksfk", "dsjkahggfuyais8dyhbhf"],
+"cost": "$309142312094"}
+database = []
+child = Child(child_info.get("name"), child_info.get("age"), child_info.get("wishlist"), child_info.get("cost"))
+database.append(child)
+
+print(child.name, child.age, child.wishlist, child.cost)
+
 
 class Clout_Seeker():
     def __init__(self, name, budget):
         self.name = name
         self.budget = budget
 
+cloutseeker_info = {"name": "Clout",
+"budget": "$102103932104923840291348091234803219840319248103948093218440923184092318409" }
 
-child_info = {"name": "HIJAKDSJN", 
-"age": 2109831094804938501435, 
-"wishlist": ["sadkfhgafjksfk", "dsjkahggfuyais8dyhbhf"],
-"costs": ["$1309", "$2384"]}
-childs = []
-child = Child(child_info.get("name"), child_info.get("age"), child_info.get("wishlist"), child_info.get("costs"))
-childs.append(Child)
+def connect():
+    possible = []
+    cloutseeker = Clout_Seeker(cloutseeker_info.get("name"), cloutseeker_info.get("budget"))
+    for object in database:
+        print(object.cost)
+        if child.cost <= cloutseeker.budget:
+            possible.append(child)
 
-print(child.name, child.age, child.wishlist, child.costs)
+connect()
+
 
 
 
