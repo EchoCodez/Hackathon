@@ -1,2 +1,2 @@
 def main():
-    print("what")
+    return "Hello, World!"

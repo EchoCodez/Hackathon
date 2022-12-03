@@ -16,9 +16,11 @@
 </head>
 
 <body>
+    <button id="button" class="bg-blue-500 text-white" pys-onClick="main()">Click</button>
+    <div id="output"></div>
     <py-script>
-        from main import main
-        main()
+        def main():
+            pyscript.write("output", "Hello, World!")
     </py-script>
     <script src="script.js"></script>
 </body>
