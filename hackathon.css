@@ -25,7 +25,8 @@ button{
     width: 200px;
     height: 100px;
     background-color: #a6b098;
+    font-size: 20px;
 }
-cloutchaserbutton{
-    display:inline;
+button:hover{
+    background-color: #919984;;
 }
