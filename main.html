@@ -33,5 +33,14 @@
         I want to donate
       </button>
     </div>
+    <div id="completed" display="none">
+        <p>You have completed the registration! We will email you to let you know more.</p>
+    </div>
+    <script>
+        document.getElementById("completed").style.display="none";
+        if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
+            document.getElementById("completed").style.display="block";
+        }
+    </script>
   </body>
 </html>

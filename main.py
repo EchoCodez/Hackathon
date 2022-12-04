@@ -5,10 +5,7 @@ class Child():
         self.wishlist = wishlist
         self.cost = cost
 
-child_info = {"name": "HIJAKDSJN", 
-"age": 2109831094804938501435, 
-"wishlist": ["sadkfhgafjksfk", "dsjkahggfuyais8dyhbhf"],
-"cost": "$309142312094"}
+child_info = {}
 database = []
 child = Child(child_info.get("name"), child_info.get("age"), child_info.get("wishlist"), child_info.get("cost"))
 database.append(child)
