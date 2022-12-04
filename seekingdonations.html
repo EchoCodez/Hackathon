@@ -3,19 +3,19 @@
 <body>
 
 <h2>Seeking donations for my shelter</h2>
+<py-script>
+    import gspread as gs
+    import pandas as pd
 
-<form action="/action_page.php">
-  <label for="fname">Full name:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="age">Age:</label><br>
-  <input type="text" id="age" name="age" value=""><br>
-  <label for="list">2-3 Wishlist Items:</label><br>
-  <input type="text" id="wishlist" name="wishlist" value=""><br>
-  <label for="list">Cost Per Item:</label><br>
-  <input type="text" id="cost" name="Cost Per Item" value=""><br><br><br>
-  <input type="submit" value="Submit">
-</form> 
+    gc = gs.service_account(filename='key.json')
+    sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1tZ__iSIROR3HE--qbX9LJuHyO9gOd2BjHHYRzc5gIDM/edit?usp=sharing')
 
+    ws = sh.worksheet('Form Responses 1')
+    df = pd.DataFrame(ws.get_all_records())
+    df.head()
+
+    print(df)
+</py-script>
 
 </body>
 </html>
