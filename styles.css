@@ -8,22 +8,22 @@ h1 {
     font-size: 50px;
     padding: 70px;
     margin: 0px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: monospace;
 }
 h2 {
     color: #5f0415;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: monospace;
 }
 h3 {
     color: #5f0415;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: monospace;
 }
 p{
     color: #5f0415;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: monospace;
     font-size: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -35,7 +35,7 @@ button {
     height: 100px;
     background-color: #a6b098;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: monospace;
 }
 button:hover {
     background-color: #919984;;
@@ -48,6 +48,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #b9404a;
+    font-family: monospace;
   }
   
   li {

@@ -3,19 +3,13 @@
 <body>
 
 <h2>Seeking donations for my shelter</h2>
-<py-script>
-    import gspread as gs
-    import pandas as pd
+<audio id="audioID" controls loop>
+    <source src="musak.wav" type="audio/wav">
+</audio>
 
-    gc = gs.service_account(filename='key.json')
-    sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1tZ__iSIROR3HE--qbX9LJuHyO9gOd2BjHHYRzc5gIDM/edit?usp=sharing')
-
-    ws = sh.worksheet('Form Responses 1')
-    df = pd.DataFrame(ws.get_all_records())
-    df.head()
-
-    print(df)
-</py-script>
+<script>
+    var myaudio = document.getElementById("audioID").autoplay = true;
+</script>
 
 </body>
 </html>
